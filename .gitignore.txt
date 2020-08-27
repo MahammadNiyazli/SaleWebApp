@@ -1,1 +1,1 @@
-/SaleDbAppForWeb/target/
+/SaleDbAppForWeb/target
