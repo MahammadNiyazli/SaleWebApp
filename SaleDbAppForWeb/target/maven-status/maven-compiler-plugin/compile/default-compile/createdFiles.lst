@@ -1,0 +1,8 @@
+com\mycompany\entity\SoldGood.class
+com\mycompany\entity\User_.class
+com\mycompany\dao\impl\UserDaoImple.class
+com\mycompany\dao\AbstractDao.class
+com\mycompany\entity\SoldGood_.class
+com\mycompany\entity\OnHandGood.class
+com\mycompany\entity\User.class
+com\mycompany\entity\OnHandGood_.class
