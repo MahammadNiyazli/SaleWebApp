@@ -9,15 +9,15 @@ import com.mycompany.dao.inter.UserDaoInter;
 
 public class Context {
 
-    public UserDaoInter instanceUserDao(){
+    public static UserDaoInter instanceUserDao(){
         return new UserDaoImpl();
     }
 
-    public OnHandGoodDaoInter instanceOnHandGoodDao(){
+    public static OnHandGoodDaoInter instanceOnHandGoodDao(){
         return new OnHandGoodDaoImpl();
     }
 
-    public SoldGoodDaoInter instanceSoldGoodDao(){
+    public static SoldGoodDaoInter instanceSoldGoodDao(){
         return new SoldGoodDaoImpl();
     }
 }

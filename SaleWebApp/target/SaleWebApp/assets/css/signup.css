@@ -1,0 +1,14 @@
+.box{
+    border : 1px solid transparent;
+    background-color: #b7cbcb;
+    box-shadow: 5px 10px 8px 10px #888888;
+    border-radius: 8%;
+    padding-top: 4%;
+    padding-right: 0;
+    padding-left: 15%;
+    padding-bottom: 4%;
+}
+
+.input{
+    height: 45px;
+}

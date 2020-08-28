@@ -1,0 +1,19 @@
+.tabsPanel{
+    background-color: darkorchid;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    width: 15%;
+    display: block;
+}
+
+
+ul li {
+    padding: 30px;
+}
+
+a{
+    width: 150px;
+    padding: 80px 10px;
+    background-color: transparent;
+}

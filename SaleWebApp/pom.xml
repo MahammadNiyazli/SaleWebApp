@@ -32,6 +32,22 @@
       <artifactId>SaleDbAppForWeb</artifactId>
       <version>0.1</version>
     </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.0-b05</version>
+      <scope>provided</scope>
+    </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/at.favre.lib/bcrypt -->
+    <dependency>
+      <groupId>at.favre.lib</groupId>
+      <artifactId>bcrypt</artifactId>
+      <version>0.5.0</version>
+    </dependency>
   </dependencies>
 
   <build>
