@@ -1,4 +1,8 @@
-com\company\controller\SignupController.class
 com\company\controller\LoginController.class
+com\company\controller\UserDetailController.class
+com\company\controller\UpdateOnHandController.class
+com\company\controller\SignupController.class
+com\company\controller\OnHandGoodController.class
+com\company\filter\SecurityFilter.class
 com\company\controller\ErrorController.class
 com\company\filter\JspFilter.class

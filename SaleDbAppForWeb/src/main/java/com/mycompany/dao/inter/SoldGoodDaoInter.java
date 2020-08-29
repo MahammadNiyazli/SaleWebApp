@@ -6,6 +6,7 @@
 package com.mycompany.dao.inter;
 
 import com.mycompany.entity.SoldGood;
+import com.mycompany.entity.User;
 
 import java.util.Date;
 import java.util.List;
@@ -16,9 +17,9 @@ import java.util.List;
  */
 public interface SoldGoodDaoInter {
 
-    public List<SoldGood> getSoldGoodByUserId(int userId);
+    public List<SoldGood> getSoldGoodByUserId(User user);
 
-    public List<SoldGood> getSoldGoodByUserIdAndDate(int userId, Date date);
+    public List<SoldGood> getSoldGoodByUserIdAndDate(User user, Date date);
 
     public boolean addSoldGood(SoldGood good);
 

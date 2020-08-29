@@ -8,6 +8,7 @@ package com.mycompany.dao.impl;
 import com.mycompany.dao.AbstractDao;
 import com.mycompany.dao.inter.OnHandGoodDaoInter;
 import com.mycompany.entity.OnHandGood;
+import com.mycompany.entity.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -29,10 +30,10 @@ public class OnHandGoodDaoImpl extends AbstractDao implements OnHandGoodDaoInter
     }
 
     @Override
-    public List<OnHandGood> getOnHandGoodByUserId(int userId) {
+    public List<OnHandGood> getOnHandGoodByUserId(User user) {
         EntityManager em = em();
-        Query query = em.createQuery("select g from OnHandGood g where g.userId=:userId",OnHandGood.class);
-        query.setParameter("userId",userId);
+        Query query = em.createQuery("select g from OnHandGood g where g.userId=:user",OnHandGood.class);
+        query.setParameter("user",user);
         List<OnHandGood> list = query.getResultList();
         em.close();
         return list;

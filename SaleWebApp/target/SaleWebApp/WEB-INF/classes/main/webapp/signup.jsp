@@ -16,7 +16,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/signup.css">
 </head>
 <body>
-<div class="container-fluid">
+
+   <div class="container-fluid">
     <div class="row"  >
         <div class="col-1"></div>
         <div class="col-4" style="margin-top: 150px">
@@ -56,5 +57,6 @@
 
     </div>
 </div>
+
 </body>
 </html>

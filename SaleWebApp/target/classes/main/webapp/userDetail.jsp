@@ -24,9 +24,9 @@
              <h1 style="text-align: center;margin-top: 50px;font-family: Papyrus;color: white ">SaleApp</h1>
               <div style="margin: 20px 0">
                   <ul class="nav nav-tabs" style="margin: 0 5%">
-                      <li class="active" style=""><a  class="btn btn-success" style="padding: 50px 10px;" data-toggle="tab" href="#onHand">On Hand Goods</a></li>
-                      <li><a  class="btn btn-success" style="padding: 50px 10px" data-toggle="tab" href="#sale">Sale</a></li>
-                      <li><a  class="btn btn-success" style="padding: 50px 10px"  data-toggle="tab" href="#soldGoods">Sold Goods</a></li>
+                      <li class="active" style=""><a class="btn btn-success sh" style="padding: 50px 10px;background-color: #1D656A;border: 1px solid transparent;border-radius: 50%" data-toggle="tab" href="#onHand">On Hand Goods</a></li>
+                      <li><a  class="btn btn-success sh" style="padding: 50px 10px;background-color: #1D656A;border: 1px solid transparent;border-radius: 50%" data-toggle="tab" href="#sale">Sale</a></li>
+                      <li><a class="btn btn-success sh" style="padding: 50px 10px;background-color: #1D656A;border: 1px solid transparent;border-radius: 50%" data-toggle="tab" href="#soldGoods">Sold Goods</a></li>
                   </ul>
              </div>
               <p  style="font-size: 9px;padding: 0 8px;color: aliceblue">Copyright © 2020 Developed by Mahammad Niyazli</p>
@@ -37,8 +37,8 @@
       <div class="col-10">
           <div class="tab-content">
 
-              <div id="onHand" class="tab-pane fade in active">
-                  <div style="background-color:red;width: 500px;height: 50px"></div>
+              <div id="onHand" class="tab-pane  in active">
+                  <jsp:include page="onHandGood.jsp" />
               </div>
 
               <div id="sale" class="tab-pane fade ">

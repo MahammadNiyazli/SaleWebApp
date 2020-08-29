@@ -6,6 +6,7 @@
 package com.mycompany.dao.inter;
 
 import com.mycompany.entity.OnHandGood;
+import com.mycompany.entity.User;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
 public interface OnHandGoodDaoInter {
     public OnHandGood getOnHandGoodById(int id);
 
-    public List<OnHandGood> getOnHandGoodByUserId(int userId);
+    public List<OnHandGood> getOnHandGoodByUserId(User user);
 
     public boolean addOnHandGood(OnHandGood good);
 

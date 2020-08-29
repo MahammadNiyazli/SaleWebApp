@@ -3,6 +3,7 @@ package com.mycompany.dao.impl;
 import com.mycompany.dao.AbstractDao;
 import com.mycompany.dao.inter.SoldGoodDaoInter;
 import com.mycompany.entity.SoldGood;
+import com.mycompany.entity.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
@@ -11,10 +12,10 @@ import java.util.List;
 
 public class SoldGoodDaoImpl extends AbstractDao implements SoldGoodDaoInter {
     @Override
-    public List<SoldGood> getSoldGoodByUserId(int userId) {
+    public List<SoldGood> getSoldGoodByUserId(User user) {
         EntityManager em = em();
-        Query query = em.createQuery("select sg from SoldGood sg where sg.userId=:userId");
-        query.setParameter("userId",userId);
+        Query query = em.createQuery("select sg from SoldGood sg where sg.userId=:user");
+        query.setParameter("user",user);
 
         List<SoldGood> list = query.getResultList();
         em.close();
@@ -22,10 +23,10 @@ public class SoldGoodDaoImpl extends AbstractDao implements SoldGoodDaoInter {
     }
 
     @Override
-    public List<SoldGood> getSoldGoodByUserIdAndDate(int userId, Date date) {
+    public List<SoldGood> getSoldGoodByUserIdAndDate(User user, Date date) {
         EntityManager em = em();
-        Query query = em.createQuery("select sg from SoldGood sg where sg.userId=:userId and sg.salesDate=:salesDate");
-        query.setParameter("userId",userId);
+        Query query = em.createQuery("select sg from SoldGood sg where sg.userId=:user and sg.salesDate=:salesDate");
+        query.setParameter("user",user);
         query.setParameter("salesDate",date);
 
         List<SoldGood> list = query.getResultList();

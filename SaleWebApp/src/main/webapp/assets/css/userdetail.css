@@ -1,5 +1,5 @@
 .tabsPanel{
-    background-color: darkorchid;
+    background-color: #349ba4;
     height: 100vh;
     position: fixed;
     left: 0;
@@ -15,5 +15,9 @@ ul li {
 a{
     width: 150px;
     padding: 80px 10px;
-    background-color: transparent;
+    transition: 1s;
+}
+
+li a:hover {
+    background-color: #72A2C0;
 }

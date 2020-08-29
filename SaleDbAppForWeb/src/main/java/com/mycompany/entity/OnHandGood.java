@@ -61,6 +61,14 @@ public class OnHandGood implements Serializable {
         this.name = name;
     }
 
+    public OnHandGood(String name, Float price, Float count, String vahid, User userId) {
+        this.name = name;
+        this.price = price;
+        this.count = count;
+        this.vahid = vahid;
+        this.userId = userId;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -140,7 +148,7 @@ public class OnHandGood implements Serializable {
 
     @Override
     public String toString() {
-        return "com.mycompany.OnHandGood[ id=" + id + " ]";
+        return name;
     }
     
 }

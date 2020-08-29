@@ -27,16 +27,16 @@
             <form method="POST" action="login">
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control input" name="email" placeholder="name@mail.ru" id="email">
+                    <input type="email" class="form-control inputStyle" name="email" placeholder="name@mail.ru" id="email" required>
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" class="form-control input" name="password" placeholder="password" id="password">
+                    <input type="password" class="form-control inputStyle" name="password" placeholder="password" id="password" required>
                 </div>
 
-                <input style="display: block" type="submit" name="submit" class="btn btn-info input" value="Login">
-                <input type="submit" name="submit" class="btn btn-success input" value="Sign Up">
+                <input style="display: block" type="submit" name="submit" class="btn btn-info " value="Login">
             </form>
+                <form method="POST" action="login"><input type="submit" name="submit" class="btn btn-success" value="Sign Up"></form>
             </div>
         </div>
 
