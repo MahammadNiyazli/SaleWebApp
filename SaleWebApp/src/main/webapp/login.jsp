@@ -36,7 +36,7 @@
 
                 <input style="display: block" type="submit" name="submit" class="btn btn-info " value="Login">
             </form>
-                <form method="POST" action="login"><input type="submit" name="submit" class="btn btn-success" value="Sign Up"></form>
+                <form method="GET" action="signup"><input type="submit" name="submit" class="btn btn-success" value="Sign Up"></form>
             </div>
         </div>
 

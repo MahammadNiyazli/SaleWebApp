@@ -12,8 +12,9 @@ public class SecurityFilter implements Filter {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
         HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-        if((!request.getRequestURI().endsWith("login") && !request.getRequestURI().endsWith("error") && !request.getRequestURI().endsWith("signup")) &&request.getSession().getAttribute("loggedInUser")==null){
+        if((!request.getRequestURI().endsWith("login") && !request.getRequestURI().endsWith("error") && !request.getRequestURI().endsWith("signup")) && request.getSession(false).getAttribute("loggedInUser")==null){
             response.sendRedirect("login");
+            System.out.println("aueyyyry");
         }else{
             filterChain.doFilter(request,response);
         }

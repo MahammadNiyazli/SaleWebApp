@@ -21,8 +21,7 @@ public class LoginController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String submit = req.getParameter("submit");
-        if(submit.equals("Login")){
+
            try {
                String email = req.getParameter("email");
                String password = req.getParameter("password");
@@ -46,9 +45,5 @@ public class LoginController extends HttpServlet {
                resp.sendRedirect("error?msg="+ex.getMessage());
            }
 
-
-        }else if(submit.equals("Sign Up")){
-            resp.sendRedirect("signup");
-        }
     }
 }

@@ -30,7 +30,6 @@
 
     OnHandGoodDaoInter onHandDao = Context.instanceOnHandGoodDao();
     String search = request.getParameter("search");
-    String reset = request.getParameter("reset");
     List<OnHandGood> listOnHand;
     List<OnHandGood> listOnHand2 =  onHandDao.getOnHandGoodByUserId(user);
     if(search!=null){
