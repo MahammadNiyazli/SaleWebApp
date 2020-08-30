@@ -75,17 +75,19 @@
         <input type="submit" class="form-control btn btn-info" name="submit" value="Add" >
     </div>
 </form >
+
   <form method="POST" action="userdetail" class="form-inline" style="margin-left: 69%">
       <div class="form-group" >
           <input list="goods" name="onHandGood" class="form-control" id="onHandGood" required>
           <datalist id="goods" >
               <%for (OnHandGood good : listOnHand2){%>
-              <option value="<%=good.getName()%>,<%=good.getId()%>">
+              <option value="<%=good.getName()%>,<%=good.getId()%>" >
                       <%}%>
           </datalist>
           <input type="submit" style="margin-left: 10px"  class="form-control btn btn-info" name="search" value="Search" >
       </div>
   </form >
+
     <form method="POST" action="userdetail" class="form-inline" style="margin-left: 89.5%">
             <input type="submit" style="margin-left: 10px"  class="form-control btn btn-info" name="reset" value="Reset" >
     </form>
@@ -114,6 +116,7 @@
         </tbody>
     </table>
   </div>
+
 
 <div class="modal fade" id="updateModel" tabindex="-1" role="dialog" aria-labelledby="UpdateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">

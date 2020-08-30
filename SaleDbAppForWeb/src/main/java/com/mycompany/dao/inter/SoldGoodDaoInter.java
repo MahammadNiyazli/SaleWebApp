@@ -5,6 +5,7 @@
  */
 package com.mycompany.dao.inter;
 
+import com.mycompany.entity.OnHandGood;
 import com.mycompany.entity.SoldGood;
 import com.mycompany.entity.User;
 
@@ -16,6 +17,8 @@ import java.util.List;
  * @author User
  */
 public interface SoldGoodDaoInter {
+
+    public SoldGood getSoldGoodById(int id);
 
     public List<SoldGood> getSoldGoodByUserId(User user);
 

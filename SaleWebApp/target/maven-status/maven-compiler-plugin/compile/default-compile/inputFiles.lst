@@ -3,6 +3,10 @@ C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\SignupCo
 C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\filter\JspFilter.java
 C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\filter\SecurityFilter.java
 C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\OnHandGoodController.java
+C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\SoldController.java
 C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\UserDetailController.java
 C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\LoginController.java
+C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\SaleController.java
+C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\LogOutController.java
+C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\UpdateSaleController.java
 C:\Workspace\SaleWebApp\SaleWebApp\src\main\java\com\company\controller\UpdateOnHandController.java

@@ -11,3 +11,4 @@ function forUpdate(name,price,count,unit,id){
     idUp.value = id;
 }
 
+

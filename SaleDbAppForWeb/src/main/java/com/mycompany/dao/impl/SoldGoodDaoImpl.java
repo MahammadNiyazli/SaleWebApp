@@ -2,6 +2,7 @@ package com.mycompany.dao.impl;
 
 import com.mycompany.dao.AbstractDao;
 import com.mycompany.dao.inter.SoldGoodDaoInter;
+import com.mycompany.entity.OnHandGood;
 import com.mycompany.entity.SoldGood;
 import com.mycompany.entity.User;
 
@@ -11,6 +12,15 @@ import java.util.Date;
 import java.util.List;
 
 public class SoldGoodDaoImpl extends AbstractDao implements SoldGoodDaoInter {
+
+
+    @Override
+    public SoldGood getSoldGoodById(int id) {
+        EntityManager em = em();
+        SoldGood good = em.find(SoldGood.class,id);
+        em.close();
+        return good;
+    }
     @Override
     public List<SoldGood> getSoldGoodByUserId(User user) {
         EntityManager em = em();

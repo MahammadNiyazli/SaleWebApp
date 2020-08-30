@@ -59,12 +59,14 @@ public class SoldGood implements Serializable {
         this.id = id;
     }
 
-    public SoldGood(Integer id, Date salesDate, float price, float count, String vahid) {
+    public SoldGood(Integer id, Date salesDate, float price, float count, String vahid,OnHandGood onHandGoodId,User userId) {
         this.id = id;
         this.salesDate = salesDate;
         this.price = price;
         this.count = count;
         this.vahid = vahid;
+        this.onHandGoodId = onHandGoodId;
+        this.userId = userId;
     }
 
     public Integer getId() {

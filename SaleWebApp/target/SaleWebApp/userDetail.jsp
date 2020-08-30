@@ -15,7 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/userdetail.css" type="text/css">
 </head>
-<body>
+<body style="overflow-x: hidden">
   <%User u = (User) session.getAttribute("loggedInUser");%>
 
   <div class="row"  >
@@ -29,6 +29,9 @@
                       <li><a class="btn btn-success sh" style="padding: 50px 10px;background-color: #1D656A;border: 1px solid transparent;border-radius: 50%" data-toggle="tab" href="#soldGoods">Sold Goods</a></li>
                   </ul>
              </div>
+             <form method="POST" action="logout" >
+                 <input type="submit" style="margin-left: 33%" class="btn btn-danger btn-sm" name="logout" value="LogOut">
+             </form>
               <p  style="font-size: 9px;padding: 0 8px;color: aliceblue">Copyright © 2020 Developed by Mahammad Niyazli</p>
           </div>
 
@@ -42,11 +45,11 @@
               </div>
 
               <div id="sale" class="tab-pane fade ">
-                  <div style="background-color:orange;width: 500px;height: 50px"></div>
+                  <jsp:include page="sale.jsp" />
               </div>
 
               <div id="soldGoods" class="tab-pane fade ">
-                  <div style="background-color:yellow;width: 500px;height: 50px"></div>
+                  <jsp:include page="sold.jsp" />
               </div>
 
           </div>
