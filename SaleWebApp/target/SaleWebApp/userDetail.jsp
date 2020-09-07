@@ -21,7 +21,7 @@
   <%User u = (User) session.getAttribute("loggedInUser");%>
 
   <div class="row"  >
-      <div class="col-2" >
+      <div class="col-2" style="height: 100vh" >
           <div class="tabsPanel" >
              <h1 style="text-align: center;margin-top: 50px;font-family: Papyrus;color: white ">SaleApp</h1>
               <div style="margin: 20px 0">

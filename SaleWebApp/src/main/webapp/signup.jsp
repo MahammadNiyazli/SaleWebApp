@@ -22,7 +22,7 @@
         <div class="col-1"></div>
         <div class="col-4" style="margin-top: 150px">
             <div class="box">
-            <div style="width: 80%" >
+            <div style="width: 80%">
                 <form method="POST" action="signup">
                     <div class="form-group">
                         <label for="name">Name:</label>

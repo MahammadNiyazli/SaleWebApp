@@ -76,7 +76,7 @@
     </div>
 </form >
 
-  <form method="POST" action="userdetail" class="form-inline" style="margin-left: 69%">
+  <form method="POST" action="userdetail" class="form-inline" style="margin-left: 65.5%">
       <div class="form-group" >
           <input list="goods" name="onHandGood" class="form-control" id="onHandGood" required>
           <datalist id="goods" >
@@ -88,7 +88,7 @@
       </div>
   </form >
 
-    <form method="POST" action="userdetail" class="form-inline" style="margin-left: 89.5%">
+    <form method="POST" action="userdetail" class="form-inline" style="margin-left: 85.5%">
             <input type="submit" style="margin-left: 10px"  class="form-control btn btn-info" name="reset" value="Reset" >
     </form>
 
