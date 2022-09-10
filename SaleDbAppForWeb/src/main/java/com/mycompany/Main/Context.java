@@ -9,11 +9,14 @@ import com.mycompany.dao.inter.UserDaoInter;
 
 public class Context {
 
+    
+    
     public static UserDaoInter instanceUserDao(){
         return new UserDaoImpl();
     }
 
     public static OnHandGoodDaoInter instanceOnHandGoodDao(){
+        System.out.println("hello world");
         return new OnHandGoodDaoImpl();
     }
 
